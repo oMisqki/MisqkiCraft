@@ -4,6 +4,6 @@ import mods.contenttweaker.VanillaFactory;
 
 import mods.contenttweaker.Item;
 
-var penguinistar = VanillaFactory.createItem("Penguini Star");
+var MisqkiStar = VanillaFactory.createItem("Misqki Star");
 
-penguinistar.register();
+MisqkiStar.register();
