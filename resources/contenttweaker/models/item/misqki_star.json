@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-      "layer0": "contenttweaker:item/misqki_star"
+      "layer0": "contenttweaker:items/misqki_star"
     }
   }
