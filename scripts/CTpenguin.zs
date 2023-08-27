@@ -1,7 +1,7 @@
 #loader contenttweaker
 
 import mods.contenttweaker.VanillaFactory;
-
+import mods.contenttweaker.Block;
 import mods.contenttweaker.Item;
 
 // ITEMS
@@ -12,7 +12,7 @@ var penguiniStar = VanillaFactory.createItem("penguini_star");
 penguiniStar.register();
 
 // BLOCKS
-var penguiniBlock = VanillaFactory.createBlock("block", <blockmaterial:rock>);
+var penguiniBlock = VanillaFactory.createBlock("penguini_block", <blockmaterial:rock>);
 penguiniBlock.setBlockHardness(50.0);
 penguiniBlock.setBlockResistance(50.0);
 penguiniBlock.setToolClass("pickaxe");
