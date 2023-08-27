@@ -2,6 +2,6 @@ import mods.contenttweaker.VanillaFactory;
 
 import mods.contenttweaker.Item;
 
-var pgItem = VanillaFactory.createItem("Pinguini Star");
+var penguinistar = VanillaFactory.createItem("Penguini Star");
 
-zsItem.register();
+penguinistar.register();
