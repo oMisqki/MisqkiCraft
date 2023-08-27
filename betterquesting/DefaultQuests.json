@@ -359,9 +359,8 @@
     "6:10": {
       "questID:3": 6,
       "preRequisites:11": [
-        7,
         17,
-        9
+        7
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -384,8 +383,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Congrats u did it woo",
-          "desc:8": "Congrats man"
+          "name:8": "YOU DID IT",
+          "desc:8": "Congrats\n\nThis quest unlocks most of the other chapters."
         }
       },
       "tasks:9": {
@@ -397,12 +396,15 @@
       "rewards:9": {
         "0:10": {
           "rewardID:8": "bq_standard:item",
-          "index:3": 1,
+          "index:3": 0,
           "rewards:9": {
             "0:10": {
-              "id:8": "tconstruct:materials",
-              "Count:3": 16,
-              "Damage:2": 0,
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 25,
               "OreDict:8": ""
             }
           }
@@ -479,7 +481,7 @@
     "8:10": {
       "questID:3": 8,
       "preRequisites:11": [
-        6
+        81
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -1538,7 +1540,9 @@
     },
     "19:10": {
       "questID:3": 19,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        82
+      ],
       "properties:10": {
         "betterquesting:10": {
           "issilent:1": 0,
@@ -1610,7 +1614,7 @@
     "20:10": {
       "questID:3": 20,
       "preRequisites:11": [
-        19
+        83
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -1817,7 +1821,7 @@
     "23:10": {
       "questID:3": 23,
       "preRequisites:11": [
-        22
+        24
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -1884,8 +1888,7 @@
     "24:10": {
       "questID:3": 24,
       "preRequisites:11": [
-        22,
-        26
+        44
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -1969,8 +1972,7 @@
     "25:10": {
       "questID:3": 25,
       "preRequisites:11": [
-        24,
-        44
+        24
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -2078,7 +2080,7 @@
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "mekanism:controlcircuit",
+            "id:8": "mekanism:enrichedalloy",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
@@ -2144,7 +2146,9 @@
     },
     "27:10": {
       "questID:3": 27,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        36
+      ],
       "properties:10": {
         "betterquesting:10": {
           "issilent:1": 0,
@@ -2155,7 +2159,7 @@
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "minecraft:nether_star",
+            "id:8": "draconicevolution:draconic_core",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
@@ -2170,12 +2174,51 @@
           "desc:8": "make a draconic core"
         }
       },
-      "tasks:9": {},
-      "rewards:9": {}
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "draconicevolution:draconic_core",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "minecraft:ender_pearl",
+              "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "draconicevolution:draconium_ingot",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "28:10": {
       "questID:3": 28,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        27
+      ],
       "properties:10": {
         "betterquesting:10": {
           "issilent:1": 0,
@@ -2186,7 +2229,7 @@
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "minecraft:nether_star",
+            "id:8": "draconicevolution:wyvern_core",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
@@ -2197,16 +2240,49 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "New Quest",
-          "desc:8": "No Description"
+          "name:8": "A better core",
+          "desc:8": "not much better tho"
         }
       },
-      "tasks:9": {},
-      "rewards:9": {}
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "draconicevolution:wyvern_core",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "minecraft:iron_ingot",
+              "Count:3": 64,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "29:10": {
       "questID:3": 29,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        30
+      ],
       "properties:10": {
         "betterquesting:10": {
           "issilent:1": 0,
@@ -2217,7 +2293,7 @@
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "minecraft:nether_star",
+            "id:8": "draconicevolution:awakened_core",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
@@ -2228,16 +2304,50 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "New Quest",
-          "desc:8": "No Description"
+          "name:8": "A pretty good core",
+          "desc:8": "its not bad at all"
         }
       },
-      "tasks:9": {},
-      "rewards:9": {}
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "draconicevolution:awakened_core",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "draconicevolution:draconium_dust",
+              "Count:3": 64,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "30:10": {
       "questID:3": 30,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        28,
+        31
+      ],
       "properties:10": {
         "betterquesting:10": {
           "issilent:1": 0,
@@ -2248,7 +2358,7 @@
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "minecraft:nether_star",
+            "id:8": "draconicevolution:draconic_block",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
@@ -2259,16 +2369,50 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "New Quest",
-          "desc:8": "No Description"
+          "name:8": "Big Spicy Block",
+          "desc:8": "its very hot"
         }
       },
-      "tasks:9": {},
-      "rewards:9": {}
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "draconicevolution:draconic_block",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "minecraft:nether_star",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "31:10": {
       "questID:3": 31,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        70,
+        28
+      ],
       "properties:10": {
         "betterquesting:10": {
           "issilent:1": 0,
@@ -2279,9 +2423,9 @@
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "minecraft:nether_star",
+            "id:8": "draconicevolution:crafting_injector",
             "Count:3": 1,
-            "Damage:2": 0,
+            "Damage:2": 1,
             "OreDict:8": ""
           },
           "globalshare:1": 0,
@@ -2290,16 +2434,50 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "New Quest",
-          "desc:8": "No Description"
+          "name:8": "Injector lvl 2",
+          "desc:8": "For basic injecting needs"
         }
       },
-      "tasks:9": {},
-      "rewards:9": {}
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "draconicevolution:crafting_injector",
+              "Count:3": 2,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "draconicevolution:crafting_injector",
+              "Count:3": 1,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "32:10": {
       "questID:3": 32,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        31,
+        29
+      ],
       "properties:10": {
         "betterquesting:10": {
           "issilent:1": 0,
@@ -2310,9 +2488,9 @@
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "minecraft:nether_star",
+            "id:8": "draconicevolution:crafting_injector",
             "Count:3": 1,
-            "Damage:2": 0,
+            "Damage:2": 2,
             "OreDict:8": ""
           },
           "globalshare:1": 0,
@@ -2321,16 +2499,51 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "New Quest",
-          "desc:8": "No Description"
+          "name:8": "Injector lvl 3",
+          "desc:8": "Very good injections occur"
         }
       },
-      "tasks:9": {},
-      "rewards:9": {}
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "draconicevolution:crafting_injector",
+              "Count:3": 1,
+              "Damage:2": 2,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "draconicevolution:crafting_injector",
+              "Count:3": 1,
+              "Damage:2": 2,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "33:10": {
       "questID:3": 33,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        29,
+        32,
+        69
+      ],
       "properties:10": {
         "betterquesting:10": {
           "issilent:1": 0,
@@ -2341,8 +2554,22 @@
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "minecraft:nether_star",
+            "ForgeCaps:10": {
+              "Parent:10": {
+                "Size:3": 18,
+                "Items:9": {}
+              }
+            },
+            "id:8": "draconicevolution:draconic_pick",
             "Count:3": 1,
+            "tag:10": {
+              "DEUpgrades:10": {
+                "digSpeed:1": 3,
+                "digAOE:1": 3,
+                "rfCap:1": 3
+              },
+              "Energy:3": 256000000
+            },
             "Damage:2": 0,
             "OreDict:8": ""
           },
@@ -2352,16 +2579,96 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "New Quest",
-          "desc:8": "No Description"
+          "name:8": "Awesome hot tools",
+          "desc:8": "For all your hot needs"
         }
       },
-      "tasks:9": {},
-      "rewards:9": {}
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "draconicevolution:draconic_sword",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "Parent:10": {
+                  "Size:3": 18,
+                  "Items:9": {}
+                }
+              },
+              "id:8": "draconicevolution:draconic_axe",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "draconicevolution:draconic_bow",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "3:10": {
+              "ForgeCaps:10": {
+                "Parent:10": {
+                  "Size:3": 18,
+                  "Items:9": {}
+                }
+              },
+              "id:8": "draconicevolution:draconic_shovel",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "4:10": {
+              "ForgeCaps:10": {
+                "Parent:10": {
+                  "Size:3": 18,
+                  "Items:9": {}
+                }
+              },
+              "id:8": "draconicevolution:draconic_pick",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 25,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "34:10": {
       "questID:3": 34,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        29,
+        32,
+        67
+      ],
       "properties:10": {
         "betterquesting:10": {
           "issilent:1": 0,
@@ -2372,8 +2679,16 @@
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "minecraft:nether_star",
+            "id:8": "draconicevolution:draconic_chest",
             "Count:3": 1,
+            "tag:10": {
+              "DEUpgrades:10": {
+                "shieldRec:1": 3,
+                "shieldCap:1": 3,
+                "rfCap:1": 3
+              },
+              "Energy:3": 256000000
+            },
             "Damage:2": 0,
             "OreDict:8": ""
           },
@@ -2383,16 +2698,72 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "New Quest",
-          "desc:8": "No Description"
+          "name:8": "Hot Armor of the Gods",
+          "desc:8": "Godly heat rn"
         }
       },
-      "tasks:9": {},
-      "rewards:9": {}
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "draconicevolution:draconic_helm",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "draconicevolution:draconic_chest",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "draconicevolution:draconic_legs",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "3:10": {
+              "id:8": "draconicevolution:draconic_boots",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 25,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "35:10": {
       "questID:3": 35,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        32,
+        29,
+        73
+      ],
       "properties:10": {
         "betterquesting:10": {
           "issilent:1": 0,
@@ -2403,7 +2774,7 @@
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "minecraft:nether_star",
+            "id:8": "draconicevolution:chaotic_core",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
@@ -2414,16 +2785,49 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "New Quest",
-          "desc:8": "No Description"
+          "name:8": "CORE OF CHAOS",
+          "desc:8": "Strongest core ever seen"
         }
       },
-      "tasks:9": {},
-      "rewards:9": {}
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "draconicevolution:chaotic_core",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "minecraft:dragon_egg",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "36:10": {
       "questID:3": 36,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        6
+      ],
       "properties:10": {
         "betterquesting:10": {
           "issilent:1": 0,
@@ -2434,7 +2838,7 @@
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "minecraft:nether_star",
+            "id:8": "draconicevolution:draconium_dust",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
@@ -2459,8 +2863,8 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "minecraft:stone",
-              "Count:3": 1,
+              "id:8": "draconicevolution:draconium_dust",
+              "Count:3": 32,
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -2468,7 +2872,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "draconicevolution:dislocator",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "37:10": {
       "questID:3": 37,
@@ -3024,12 +3441,29 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 50,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "46:10": {
       "questID:3": 46,
       "preRequisites:11": [
-        45
+        45,
+        50
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -3075,7 +3509,26 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "id:8": "projecte:item.pe_matter",
+              "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "projecte:item.pe_matter",
+              "Count:3": 2,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "47:10": {
       "questID:3": 47,
@@ -3126,7 +3579,41 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 25,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 50,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 75,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "48:10": {
       "questID:3": 48,
@@ -3177,7 +3664,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "minecraft:diamond_block",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "49:10": {
       "questID:3": 49,
@@ -3206,17 +3706,49 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "New Quest",
-          "desc:8": "No Description"
+          "name:8": "ELITE TECH",
+          "desc:8": "dont ever spend no diamonds on a hoe :100: :100: :fire:"
         }
       },
-      "tasks:9": {},
-      "rewards:9": {}
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "mekanism:reinforcedalloy",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "minecraft:iron_ingot",
+              "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "50:10": {
       "questID:3": 50,
       "preRequisites:11": [
-        64
+        64,
+        62
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -3228,8 +3760,14 @@
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "minecraft:nether_star",
+            "id:8": "mekanism:energycube",
             "Count:3": 1,
+            "tag:10": {
+              "tier:3": 3,
+              "mekData:10": {
+                "energyStored:6": 1.28E8
+              }
+            },
             "Damage:2": 0,
             "OreDict:8": ""
           },
@@ -3239,12 +3777,67 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "New Quest",
-          "desc:8": "No Description"
+          "name:8": "OURPLE CUBE",
+          "desc:8": "grats"
         }
       },
-      "tasks:9": {},
-      "rewards:9": {}
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "mekanism:energycube",
+              "Count:3": 1,
+              "tag:10": {
+                "tier:3": 3
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 25,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "1:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 1,
+          "choices:9": {
+            "0:10": {
+              "id:8": "minecraft:obsidian",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "minecraft:diamond",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "51:10": {
       "questID:3": 51,
@@ -3307,7 +3900,8 @@
     "52:10": {
       "questID:3": 52,
       "preRequisites:11": [
-        51
+        51,
+        24
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -3467,12 +4061,105 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "New Quest",
-          "desc:8": "No Description"
+          "name:8": "ENRICHMENT!!",
+          "desc:8": "Honestly it\u0027s dumb as fuck to avoid making this.\n\n- 8X EFFICIENT INFUSING\n- Ore doubling out of the BOX\n- Plus easy dusts and other materials\n\nYou decide (not really. you have to make this to progress. fuck you.)"
         }
       },
-      "tasks:9": {},
-      "rewards:9": {}
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "mekanism:machineblock",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 1,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "mekanism:compressedredstone",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "mekanism:compresseddiamond",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "mekanism:compressedobsidian",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 25,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "1:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 1,
+          "choices:9": {
+            "0:10": {
+              "id:8": "mekanism:compressedcarbon",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "mekanism:compressedredstone",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "mekanism:compresseddiamond",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "3:10": {
+              "id:8": "mekanism:compressedobsidian",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "55:10": {
       "questID:3": 55,
@@ -3523,7 +4210,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 1,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "projecte:matter_block",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "56:10": {
       "questID:3": 56,
@@ -3553,7 +4253,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Black tar heroin tools",
-          "desc:8": "No Description"
+          "desc:8": "Don\u0027t sniff them too hard"
         }
       },
       "tasks:9": {
@@ -3597,7 +4297,23 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 1,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 50,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "57:10": {
       "questID:3": 57,
@@ -3666,7 +4382,23 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 50,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "58:10": {
       "questID:3": 58,
@@ -3740,7 +4472,23 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 50,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "59:10": {
       "questID:3": 59,
@@ -3809,7 +4557,23 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 50,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "60:10": {
       "questID:3": 60,
@@ -3878,7 +4642,38 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "projecte:item.pe_klein_star",
+              "Count:3": 1,
+              "Damage:2": 4,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "1:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 1,
+          "choices:9": {
+            "0:10": {
+              "id:8": "projecte:matter_block",
+              "Count:3": 1,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "projecte:item.pe_klein_star",
+              "Count:3": 1,
+              "Damage:2": 4,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "61:10": {
       "questID:3": 61,
@@ -3938,7 +4733,26 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "id:8": "projecte:item.pe_klein_star",
+              "Count:3": 2,
+              "Damage:2": 4,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "projecte:item.pe_matter",
+              "Count:3": 4,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "62:10": {
       "questID:3": 62,
@@ -3967,12 +4781,43 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "ADVANCED TECH",
+          "name:8": "ULTIMATE TECH",
           "desc:8": "all in one.\n\nPLEASE for the LOVE OF JOD make an enrichment chamber.\nyou can compress shit - makes infusing so much efficient."
         }
       },
-      "tasks:9": {},
-      "rewards:9": {}
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "mekanism:atomicalloy",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "minecraft:lava_bucket",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "63:10": {
       "questID:3": 63,
@@ -4056,7 +4901,8 @@
     "64:10": {
       "questID:3": 64,
       "preRequisites:11": [
-        65
+        65,
+        49
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -4068,8 +4914,14 @@
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "minecraft:nether_star",
+            "id:8": "mekanism:energycube",
             "Count:3": 1,
+            "tag:10": {
+              "tier:3": 2,
+              "mekData:10": {
+                "energyStored:6": 3.2E7
+              }
+            },
             "Damage:2": 0,
             "OreDict:8": ""
           },
@@ -4079,18 +4931,1600 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "New Quest",
-          "desc:8": "No Description"
+          "name:8": "BLUE CUBE",
+          "desc:8": "almost there pal"
         }
       },
-      "tasks:9": {},
-      "rewards:9": {}
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "mekanism:energycube",
+              "Count:3": 1,
+              "tag:10": {
+                "tier:3": 2
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "minecraft:diamond",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "65:10": {
       "questID:3": 65,
       "preRequisites:11": [
-        66
+        66,
+        26
       ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "mekanism:energycube",
+            "Count:3": 1,
+            "tag:10": {
+              "tier:3": 1,
+              "mekData:10": {
+                "energyStored:6": 8000000.0
+              }
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "RED CUBE",
+          "desc:8": "why do i even bother writing shit here"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "mekanism:energycube",
+              "Count:3": 1,
+              "tag:10": {
+                "tier:3": 1
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "tconstruct:throwball",
+              "Count:3": 2,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "66:10": {
+      "questID:3": 66,
+      "preRequisites:11": [
+        44
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "mekanism:energycube",
+            "Count:3": 1,
+            "tag:10": {
+              "tier:3": 0,
+              "mekData:10": {
+                "energyStored:6": 2000000.0
+              }
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "GREEN CUBE",
+          "desc:8": "the beginning of the crazy insanity.\nyou need the purple cube later on, so start\nwhile you can."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "mekanism:energycube",
+              "Count:3": 1,
+              "tag:10": {
+                "tier:3": 0
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "mekanism:energytablet",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "67:10": {
+      "questID:3": 67,
+      "preRequisites:11": [
+        28
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "draconicevolution:wyvern_chest",
+            "Count:3": 1,
+            "tag:10": {
+              "DEUpgrades:10": {
+                "shieldRec:1": 2,
+                "shieldCap:1": 2,
+                "rfCap:1": 2
+              },
+              "Energy:3": 32000000
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Cool armor ig",
+          "desc:8": "idk bro ok"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "draconicevolution:wyvern_helm",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "draconicevolution:wyvern_chest",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "draconicevolution:wyvern_legs",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "3:10": {
+              "id:8": "draconicevolution:wyvern_boots",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 25,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "68:10": {
+      "questID:3": 68,
+      "preRequisites:11": [
+        61,
+        60,
+        47,
+        43
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "projecte:item.pe_rm_sword",
+            "Count:3": 1,
+            "tag:10": {},
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "WOWZA U DID IT",
+          "desc:8": "So coolio"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      },
+      "rewards:9": {}
+    },
+    "69:10": {
+      "questID:3": 69,
+      "preRequisites:11": [
+        28
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "Parent:10": {
+                "Size:3": 9,
+                "Items:9": {}
+              }
+            },
+            "id:8": "draconicevolution:wyvern_pick",
+            "Count:3": 1,
+            "tag:10": {
+              "DEUpgrades:10": {
+                "digSpeed:1": 2,
+                "digAOE:1": 2,
+                "rfCap:1": 2
+              },
+              "Energy:3": 32000000
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Wow purple tools",
+          "desc:8": "they\u0027re purple"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "Parent:10": {
+                  "Size:3": 9,
+                  "Items:9": {}
+                }
+              },
+              "id:8": "draconicevolution:wyvern_axe",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "draconicevolution:wyvern_sword",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "draconicevolution:wyvern_bow",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "3:10": {
+              "ForgeCaps:10": {
+                "Parent:10": {
+                  "Size:3": 9,
+                  "Items:9": {}
+                }
+              },
+              "id:8": "draconicevolution:wyvern_shovel",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "4:10": {
+              "ForgeCaps:10": {
+                "Parent:10": {
+                  "Size:3": 9,
+                  "Items:9": {}
+                }
+              },
+              "id:8": "draconicevolution:wyvern_pick",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 25,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "70:10": {
+      "questID:3": 70,
+      "preRequisites:11": [
+        27
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "draconicevolution:crafting_injector",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Injector lvl 1",
+          "desc:8": "Horrible injector"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "draconicevolution:crafting_injector",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "draconicevolution:crafting_injector",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "71:10": {
+      "questID:3": 71,
+      "preRequisites:11": [
+        27
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "draconicevolution:energy_infuser",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "POWER INFUSER",
+          "desc:8": "Infuses power!!!!"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "draconicevolution:energy_infuser",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 25,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "72:10": {
+      "questID:3": 72,
+      "preRequisites:11": [
+        6
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:grass",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Mystical Agriculture",
+          "desc:8": "Checkmark quest to start this hellhole"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "Damage:2": 102,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "73:10": {
+      "questID:3": 73,
+      "preRequisites:11": [
+        33
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "Parent:10": {
+                "Size:3": 27,
+                "Items:9": {}
+              }
+            },
+            "id:8": "draconicevolution:draconic_staff_of_power",
+            "Count:3": 1,
+            "tag:10": {
+              "DEUpgrades:10": {
+                "attackDmg:1": 3,
+                "digSpeed:1": 3,
+                "digAOE:1": 3,
+                "rfCap:1": 3,
+                "attackAOE:1": 3
+              },
+              "Energy:3": 768000000
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "THE STAFF OF POWER",
+          "desc:8": "its very powerful"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "Parent:10": {
+                  "Size:3": 27,
+                  "Items:9": {}
+                }
+              },
+              "id:8": "draconicevolution:draconic_staff_of_power",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "draconicevolution:dragon_heart",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "74:10": {
+      "questID:3": 74,
+      "preRequisites:11": [
+        72
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "mysticalagriculture:crafting",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Getting Started",
+          "desc:8": "Where it all begins.... Start by getting these basic resources since you\u0027ll need a nefarious amount of them cause I jacked all the recipes :tr:"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "mysticalagriculture:crafting",
+              "Count:3": 64,
+              "Damage:2": 5,
+              "OreDict:8": "shardProsperity"
+            },
+            "1:10": {
+              "id:8": "mysticalagriculture:crafting",
+              "Count:3": 64,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "id:8": "mysticalagriculture:prosperity_ore",
+              "Count:3": 64,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "mysticalagriculture:crafting",
+              "Count:3": 64,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "75:10": {
+      "questID:3": 75,
+      "preRequisites:11": [
+        74
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "mysticalagriculture:crafting",
+            "Count:3": 1,
+            "Damage:2": 16,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Base Seeds",
+          "desc:8": "Now with too much prosperity"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "mysticalagriculture:crafting",
+              "Count:3": 1,
+              "Damage:2": 16,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "mysticalagriculture:crafting",
+              "Count:3": 16,
+              "Damage:2": 5,
+              "OreDict:8": "shardProsperity"
+            }
+          }
+        }
+      }
+    },
+    "76:10": {
+      "questID:3": 76,
+      "preRequisites:11": [
+        75
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "mysticalagriculture:crafting",
+            "Count:3": 1,
+            "Damage:2": 17,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Tier 1 Seeds",
+          "desc:8": "The tier 1 crafting seeds have been completly obliterated. have fun getting inferium."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "mysticalagriculture:crafting",
+              "Count:3": 1,
+              "Damage:2": 17,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "mysticalagriculture:crafting",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": "essenceInferium"
+            }
+          }
+        }
+      }
+    },
+    "77:10": {
+      "questID:3": 77,
+      "preRequisites:11": [
+        76
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "mysticalagriculture:tier1_inferium_seeds",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Inferium... Please",
+          "desc:8": "Hey you! Yeah you! Are you tired of killing zombies with the hope of them dropping inferium? Have you had it with mining for inferium? Well boy do I have just the thing for you because now you can craft inferium seeds!!! (For the low price of a fraction of your sanity and of course, inferium)"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "mysticalagriculture:tier1_inferium_seeds",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "betterquesting:placeholder",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "78:10": {
+      "questID:3": 78,
+      "preRequisites:11": [
+        77,
+        87
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "mysticalagriculture:tier2_inferium_seeds",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Inferium???",
+          "desc:8": "Are you enjoying yourself? By the way, it doesn\u0027t have to be this way. You just kill the wither since you\u0027ll need a whack-load of nether stars anyway."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "mysticalagriculture:tier2_inferium_seeds",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "betterquesting:placeholder",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "79:10": {
+      "questID:3": 79,
+      "preRequisites:11": [
+        78
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "mysticalagriculture:tier3_inferium_seeds",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Drownin\u0027 in inferium $$$",
+          "desc:8": "If you\u0027ve made the tier 3 seeds, that means that you are either really dumb and early in the game or just later in the game and need the seed. Seriously though, withers exist. They give a lot of essence."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "mysticalagriculture:tier3_inferium_seeds",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "betterquesting:placeholder",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "80:10": {
+      "questID:3": 80,
+      "preRequisites:11": [
+        79
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "mysticalagriculture:tier4_inferium_seeds",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "SHADOW WIZARD INFERIUM GANG",
+          "desc:8": "We love inferium"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "mysticalagriculture:tier4_inferium_seeds",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "betterquesting:placeholder",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "81:10": {
+      "questID:3": 81,
+      "preRequisites:11": [
+        5
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "tconstruct:tooltables",
+            "Count:3": 1,
+            "tag:10": {
+              "textureBlock:10": {
+                "id:8": "minecraft:log",
+                "Count:1": 1,
+                "Damage:2": 0
+              }
+            },
+            "Damage:2": 2,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "TINKERS",
+          "desc:8": "Unlocks Tinker\u0027s Construct"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      },
+      "rewards:9": {}
+    },
+    "82:10": {
+      "questID:3": 82,
+      "preRequisites:11": [
+        4
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "mekanism:machineblock",
+            "Count:3": 1,
+            "Damage:2": 8,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "MEK",
+          "desc:8": "Unlocks Mekanism"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      },
+      "rewards:9": {}
+    },
+    "83:10": {
+      "questID:3": 83,
+      "preRequisites:11": [
+        19
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "mekanismgenerators:generator",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "A Primer on Power",
+          "desc:8": "lol like the nomifactory quest\n\nuhhh yeah your machines need power\nand the heat gen is the simplest source\n\nso make it"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "mekanismgenerators:generator",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "minecraft:coal",
+              "Count:3": 32,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "84:10": {
+      "questID:3": 84,
+      "preRequisites:11": [
+        26,
+        83
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "mekanismgenerators:generator",
+            "Count:3": 1,
+            "Damage:2": 1,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Solar Power",
+          "desc:8": "solar power is cool! also renewable\nno more dumping a fuckton of coal in a heat gen.\n\nmake it with your new alloy! or not.\nbut you get a loot chest if you do B)"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "mekanismgenerators:generator",
+              "Count:3": 1,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "mekanismgenerators:generator",
+              "Count:3": 1,
+              "Damage:2": 5,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "id:8": "mekanism:ingot",
+              "Count:3": 8,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "minecraft:iron_ingot",
+              "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "85:10": {
+      "questID:3": 85,
+      "preRequisites:11": [
+        80
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "mysticalagriculture:tier5_inferium_seeds",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Mafia levels of essence",
+          "desc:8": "With this seed you now have the power to become the inferium mafia $w$"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "mysticalagriculture:tier5_inferium_seeds",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "betterquesting:placeholder",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "86:10": {
+      "questID:3": 86,
+      "preRequisites:11": [
+        85
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "mysticalagradditions:tier6_inferium_seeds",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "The God of Essence",
+          "desc:8": "Ngl if you made it here... Goodjob. You have now pretty much beaten this section of the modpack."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "mysticalagradditions:tier6_inferium_seeds",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "betterquesting:placeholder",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "87:10": {
+      "questID:3": 87,
+      "preRequisites:11": [
+        74
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "mysticalagriculture:infusion_crystal",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Infusion Crystal",
+          "desc:8": "This little thing pretty much gates the rest of this mod. Talk about good design."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "mysticalagriculture:infusion_crystal",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "betterquesting:placeholder",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "88:10": {
+      "questID:3": 88,
+      "preRequisites:11": [],
       "properties:10": {
         "betterquesting:10": {
           "issilent:1": 0,
@@ -4119,8 +6553,287 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "66:10": {
-      "questID:3": 66,
+    "89:10": {
+      "questID:3": 89,
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:nether_star",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "New Quest",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "90:10": {
+      "questID:3": 90,
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:nether_star",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "New Quest",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "91:10": {
+      "questID:3": 91,
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:nether_star",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "New Quest",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "92:10": {
+      "questID:3": 92,
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:nether_star",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "New Quest",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "93:10": {
+      "questID:3": 93,
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:nether_star",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "New Quest",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "94:10": {
+      "questID:3": 94,
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:nether_star",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "New Quest",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "95:10": {
+      "questID:3": 95,
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:nether_star",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "New Quest",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "96:10": {
+      "questID:3": 96,
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:nether_star",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "New Quest",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "97:10": {
+      "questID:3": 97,
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:nether_star",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "New Quest",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "98:10": {
+      "questID:3": 98,
       "preRequisites:11": [],
       "properties:10": {
         "betterquesting:10": {
@@ -4156,35 +6869,35 @@
       "quests:9": {
         "0:10": {
           "sizeX:3": 24,
-          "x:3": -216,
+          "x:3": -204,
           "y:3": 0,
           "id:3": 0,
           "sizeY:3": 24
         },
         "1:10": {
           "sizeX:3": 24,
-          "x:3": -162,
+          "x:3": -156,
           "y:3": 0,
           "id:3": 1,
           "sizeY:3": 24
         },
         "2:10": {
           "sizeX:3": 24,
-          "x:3": 12,
+          "x:3": -12,
           "y:3": 0,
           "id:3": 3,
           "sizeY:3": 24
         },
         "3:10": {
           "sizeX:3": 24,
-          "x:3": -42,
+          "x:3": -60,
           "y:3": 0,
           "id:3": 4,
           "sizeY:3": 24
         },
         "4:10": {
           "sizeX:3": 24,
-          "x:3": -102,
+          "x:3": -108,
           "y:3": 0,
           "id:3": 5,
           "sizeY:3": 24
@@ -4192,29 +6905,43 @@
         "5:10": {
           "sizeX:3": 24,
           "x:3": 120,
-          "y:3": 0,
+          "y:3": -48,
           "id:3": 6,
           "sizeY:3": 24
         },
         "6:10": {
           "sizeX:3": 24,
-          "x:3": 66,
+          "x:3": 60,
           "y:3": 0,
           "id:3": 7,
           "sizeY:3": 24
         },
         "7:10": {
           "sizeX:3": 24,
-          "x:3": 66,
+          "x:3": 60,
           "y:3": -48,
           "id:3": 9,
           "sizeY:3": 24
         },
         "8:10": {
           "sizeX:3": 24,
-          "x:3": 66,
-          "y:3": -90,
+          "x:3": 60,
+          "y:3": -96,
           "id:3": 17,
+          "sizeY:3": 24
+        },
+        "9:10": {
+          "sizeX:3": 24,
+          "x:3": -108,
+          "y:3": -48,
+          "id:3": 81,
+          "sizeY:3": 24
+        },
+        "10:10": {
+          "sizeX:3": 24,
+          "x:3": -60,
+          "y:3": -48,
+          "id:3": 82,
           "sizeY:3": 24
         }
       },
@@ -4268,56 +6995,56 @@
         "1:10": {
           "sizeX:3": 24,
           "x:3": -108,
-          "y:3": -18,
+          "y:3": -36,
           "id:3": 10,
           "sizeY:3": 24
         },
         "2:10": {
           "sizeX:3": 24,
-          "x:3": -66,
+          "x:3": -60,
           "y:3": -36,
           "id:3": 11,
           "sizeY:3": 24
         },
         "3:10": {
           "sizeX:3": 24,
-          "x:3": -30,
-          "y:3": -12,
+          "x:3": -60,
+          "y:3": -84,
           "id:3": 12,
           "sizeY:3": 24
         },
         "4:10": {
           "sizeX:3": 24,
-          "x:3": 36,
-          "y:3": 0,
+          "x:3": -12,
+          "y:3": -36,
           "id:3": 13,
           "sizeY:3": 24
         },
         "5:10": {
           "sizeX:3": 24,
-          "x:3": 12,
-          "y:3": -36,
+          "x:3": -12,
+          "y:3": -84,
           "id:3": 14,
           "sizeY:3": 24
         },
         "6:10": {
           "sizeX:3": 24,
-          "x:3": 72,
-          "y:3": -24,
+          "x:3": 36,
+          "y:3": -36,
           "id:3": 15,
           "sizeY:3": 24
         },
         "7:10": {
           "sizeX:3": 24,
-          "x:3": 108,
-          "y:3": -42,
+          "x:3": 84,
+          "y:3": -36,
           "id:3": 16,
           "sizeY:3": 24
         },
         "8:10": {
           "sizeX:3": 24,
-          "x:3": 54,
-          "y:3": -60,
+          "x:3": 36,
+          "y:3": -84,
           "id:3": 18,
           "sizeY:3": 24
         }
@@ -4351,7 +7078,7 @@
       "quests:9": {
         "0:10": {
           "sizeX:3": 24,
-          "x:3": -348,
+          "x:3": -396,
           "y:3": -120,
           "id:3": 19,
           "sizeY:3": 24
@@ -4366,84 +7093,84 @@
         "2:10": {
           "sizeX:3": 24,
           "x:3": -300,
-          "y:3": -48,
+          "y:3": -24,
           "id:3": 21,
           "sizeY:3": 24
         },
         "3:10": {
           "sizeX:3": 24,
           "x:3": -252,
-          "y:3": -96,
+          "y:3": -72,
           "id:3": 22,
           "sizeY:3": 24
         },
         "4:10": {
           "sizeX:3": 24,
-          "x:3": -252,
-          "y:3": -48,
+          "x:3": -240,
+          "y:3": 12,
           "id:3": 23,
           "sizeY:3": 24
         },
         "5:10": {
           "sizeX:3": 24,
           "x:3": -204,
-          "y:3": -48,
+          "y:3": -24,
           "id:3": 24,
           "sizeY:3": 24
         },
         "6:10": {
           "sizeX:3": 24,
           "x:3": -168,
-          "y:3": -48,
+          "y:3": 12,
           "id:3": 25,
           "sizeY:3": 24
         },
         "7:10": {
           "sizeX:3": 24,
           "x:3": -252,
-          "y:3": -156,
+          "y:3": -168,
           "id:3": 26,
           "sizeY:3": 24
         },
         "8:10": {
           "sizeX:3": 24,
-          "x:3": -168,
-          "y:3": -96,
+          "x:3": -204,
+          "y:3": -72,
           "id:3": 44,
           "sizeY:3": 24
         },
         "9:10": {
           "sizeX:3": 24,
           "x:3": -204,
-          "y:3": -156,
+          "y:3": -168,
           "id:3": 49,
           "sizeY:3": 24
         },
         "10:10": {
           "sizeX:3": 24,
           "x:3": -156,
-          "y:3": -204,
+          "y:3": -216,
           "id:3": 50,
           "sizeY:3": 24
         },
         "11:10": {
           "sizeX:3": 24,
-          "x:3": -120,
-          "y:3": -96,
+          "x:3": -156,
+          "y:3": -72,
           "id:3": 51,
           "sizeY:3": 24
         },
         "12:10": {
           "sizeX:3": 24,
-          "x:3": -120,
-          "y:3": -48,
+          "x:3": -156,
+          "y:3": -24,
           "id:3": 52,
           "sizeY:3": 24
         },
         "13:10": {
           "sizeX:3": 24,
-          "x:3": -72,
-          "y:3": -48,
+          "x:3": -84,
+          "y:3": -24,
           "id:3": 53,
           "sizeY:3": 24
         },
@@ -4457,36 +7184,50 @@
         "15:10": {
           "sizeX:3": 24,
           "x:3": -156,
-          "y:3": -156,
+          "y:3": -168,
           "id:3": 62,
           "sizeY:3": 24
         },
         "16:10": {
           "sizeX:3": 24,
-          "x:3": -108,
-          "y:3": -156,
+          "x:3": -84,
+          "y:3": -168,
           "id:3": 63,
           "sizeY:3": 24
         },
         "17:10": {
           "sizeX:3": 24,
           "x:3": -204,
-          "y:3": -204,
+          "y:3": -216,
           "id:3": 64,
           "sizeY:3": 24
         },
         "18:10": {
           "sizeX:3": 24,
           "x:3": -252,
-          "y:3": -204,
+          "y:3": -216,
           "id:3": 65,
           "sizeY:3": 24
         },
         "19:10": {
           "sizeX:3": 24,
           "x:3": -300,
-          "y:3": -204,
+          "y:3": -216,
           "id:3": 66,
+          "sizeY:3": 24
+        },
+        "20:10": {
+          "sizeX:3": 24,
+          "x:3": -348,
+          "y:3": -120,
+          "id:3": 83,
+          "sizeY:3": 24
+        },
+        "21:10": {
+          "sizeX:3": 24,
+          "x:3": -348,
+          "y:3": -168,
+          "id:3": 84,
           "sizeY:3": 24
         }
       },
@@ -4628,6 +7369,13 @@
           "y:3": -36,
           "id:3": 61,
           "sizeY:3": 24
+        },
+        "17:10": {
+          "sizeX:3": 24,
+          "x:3": 24,
+          "y:3": -60,
+          "id:3": 68,
+          "sizeY:3": 24
         }
       },
       "lineID:3": 4,
@@ -4636,8 +7384,9 @@
           "visibility:8": "NORMAL",
           "name:8": "Project e",
           "icon:10": {
-            "id:8": "minecraft:book",
+            "id:8": "projecte:item.pe_philosophers_stone",
             "Count:3": 1,
+            "tag:10": {},
             "Damage:2": 0,
             "OreDict:8": ""
           },
@@ -4652,72 +7401,107 @@
       "quests:9": {
         "0:10": {
           "sizeX:3": 24,
-          "x:3": -228,
+          "x:3": -240,
           "y:3": -72,
           "id:3": 27,
           "sizeY:3": 24
         },
         "1:10": {
           "sizeX:3": 24,
-          "x:3": -186,
+          "x:3": -192,
           "y:3": -72,
           "id:3": 28,
           "sizeY:3": 24
         },
         "2:10": {
           "sizeX:3": 24,
-          "x:3": -144,
-          "y:3": -90,
+          "x:3": -96,
+          "y:3": -72,
           "id:3": 29,
           "sizeY:3": 24
         },
         "3:10": {
           "sizeX:3": 24,
-          "x:3": -144,
-          "y:3": -48,
+          "x:3": -132,
+          "y:3": -72,
           "id:3": 30,
           "sizeY:3": 24
         },
         "4:10": {
           "sizeX:3": 24,
-          "x:3": -90,
-          "y:3": -126,
+          "x:3": -168,
+          "y:3": -24,
           "id:3": 31,
           "sizeY:3": 24
         },
         "5:10": {
           "sizeX:3": 24,
-          "x:3": -66,
-          "y:3": -126,
+          "x:3": -60,
+          "y:3": -24,
           "id:3": 32,
           "sizeY:3": 24
         },
         "6:10": {
           "sizeX:3": 24,
-          "x:3": -42,
-          "y:3": -126,
+          "x:3": -48,
+          "y:3": -120,
           "id:3": 33,
           "sizeY:3": 24
         },
         "7:10": {
           "sizeX:3": 24,
-          "x:3": -90,
-          "y:3": -102,
+          "x:3": -48,
+          "y:3": -144,
           "id:3": 34,
           "sizeY:3": 24
         },
         "8:10": {
           "sizeX:3": 24,
-          "x:3": -66,
-          "y:3": -102,
+          "x:3": 0,
+          "y:3": -72,
           "id:3": 35,
           "sizeY:3": 24
         },
         "9:10": {
           "sizeX:3": 24,
-          "x:3": -270,
+          "x:3": -312,
           "y:3": -72,
           "id:3": 36,
+          "sizeY:3": 24
+        },
+        "10:10": {
+          "sizeX:3": 24,
+          "x:3": -168,
+          "y:3": -144,
+          "id:3": 67,
+          "sizeY:3": 24
+        },
+        "11:10": {
+          "sizeX:3": 24,
+          "x:3": -168,
+          "y:3": -120,
+          "id:3": 69,
+          "sizeY:3": 24
+        },
+        "12:10": {
+          "sizeX:3": 24,
+          "x:3": -216,
+          "y:3": -24,
+          "id:3": 70,
+          "sizeY:3": 24
+        },
+        "13:10": {
+          "sizeX:3": 24,
+          "x:3": -240,
+          "y:3": -120,
+          "id:3": 71,
+          "sizeY:3": 24
+        },
+        "14:10": {
+          "sizeX:3": 24,
+          "x:3": -12,
+          "y:3": -120,
+          "id:3": 73,
           "sizeY:3": 24
         }
       },
@@ -4727,7 +7511,7 @@
           "visibility:8": "NORMAL",
           "name:8": "Draconic evolution",
           "icon:10": {
-            "id:8": "minecraft:book",
+            "id:8": "draconicevolution:dragon_heart",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
@@ -4740,21 +7524,99 @@
       "order:3": 4
     },
     "6:10": {
-      "quests:9": {},
+      "quests:9": {
+        "0:10": {
+          "sizeX:3": 24,
+          "x:3": -192,
+          "y:3": 0,
+          "id:3": 72,
+          "sizeY:3": 24
+        },
+        "1:10": {
+          "sizeX:3": 24,
+          "x:3": -72,
+          "y:3": 0,
+          "id:3": 74,
+          "sizeY:3": 24
+        },
+        "2:10": {
+          "sizeX:3": 24,
+          "x:3": -72,
+          "y:3": -72,
+          "id:3": 75,
+          "sizeY:3": 24
+        },
+        "3:10": {
+          "sizeX:3": 24,
+          "x:3": 36,
+          "y:3": -72,
+          "id:3": 76,
+          "sizeY:3": 24
+        },
+        "4:10": {
+          "sizeX:3": 24,
+          "x:3": 36,
+          "y:3": 0,
+          "id:3": 77,
+          "sizeY:3": 24
+        },
+        "5:10": {
+          "sizeX:3": 24,
+          "x:3": -12,
+          "y:3": 48,
+          "id:3": 78,
+          "sizeY:3": 24
+        },
+        "6:10": {
+          "sizeX:3": 24,
+          "x:3": 12,
+          "y:3": 96,
+          "id:3": 79,
+          "sizeY:3": 24
+        },
+        "7:10": {
+          "sizeX:3": 24,
+          "x:3": 60,
+          "y:3": 96,
+          "id:3": 80,
+          "sizeY:3": 24
+        },
+        "8:10": {
+          "sizeX:3": 24,
+          "x:3": 84,
+          "y:3": 48,
+          "id:3": 85,
+          "sizeY:3": 24
+        },
+        "9:10": {
+          "sizeX:3": 24,
+          "x:3": 36,
+          "y:3": 48,
+          "id:3": 86,
+          "sizeY:3": 24
+        },
+        "10:10": {
+          "sizeX:3": 24,
+          "x:3": 132,
+          "y:3": 0,
+          "id:3": 87,
+          "sizeY:3": 24
+        }
+      },
       "lineID:3": 6,
       "properties:10": {
         "betterquesting:10": {
           "visibility:8": "NORMAL",
-          "name:8": "New Quest Line",
+          "name:8": "Mystical Agriculture",
           "icon:10": {
-            "id:8": "minecraft:book",
+            "id:8": "mysticalagradditions:stuff",
             "Count:3": 1,
-            "Damage:2": 0,
+            "Damage:2": 69,
             "OreDict:8": ""
           },
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "No Description"
+          "desc:8": "Obviously this mod has also been completly destroyed :tr:"
         }
       },
       "order:3": 5
