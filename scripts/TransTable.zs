@@ -1,3 +1,0 @@
-recipes.remove(<projecte:transmutation_table>);
-
-recipes.addShaped(<projecte:transmutation_table>,[[<projecte:matter_block:1>, <mekanism:energycube>.withTag({tier: 3, mekData: {energyStored: 1.28E8}}), <projecte:matter_block:1>], [<minecraft:nether_star>, <projecte:item.pe_philosophers_stone>, <minecraft:nether_star>], [<projecte:matter_block:1>, <mekanism:energycube>.withTag({tier: 3, mekData: {energyStored: 1.28E8}}), <projecte:matter_block:1>]]);
