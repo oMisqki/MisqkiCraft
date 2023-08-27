@@ -9,3 +9,7 @@ recipes.addShaped(<contenttweaker:penguini_star> * 1, [[<minecraft:diamond>, <mi
 // Penguini Block
 recipes.remove(<contenttweaker:penguini_block:0>);
 recipes.addShaped(<contenttweaker:penguini_block:0> * 1, [[<contenttweaker:penguini_star>, <contenttweaker:penguini_star>, <contenttweaker:penguini_star>], [<contenttweaker:penguini_star>, <contenttweaker:penguini_star>, <contenttweaker:penguini_star>],[<contenttweaker:penguini_star>, <contenttweaker:penguini_star>, <contenttweaker:penguini_star>]]);
+
+// Penguini Block to Star
+recipes.remove(<contenttweaker:penguini_star>);
+recipes.addShapeless("block2star", <contenttweaker:penguini_star> * 9, [<contenttweaker:penguini_block:0>]);
