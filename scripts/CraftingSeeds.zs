@@ -27,3 +27,4 @@ recipes.addShaped(<mysticalagriculture:crafting:21> * 1, [[<mysticalagriculture:
 recipes.remove(<mysticalagradditions:insanium:1>);
 recipes.addShaped(<mysticalagradditions:insanium:1> * 1, [[<mysticalagradditions:insanium:0>, <mysticalagradditions:storage:0>, <mysticalagradditions:insanium:0>], [<mysticalagradditions:storage:0>, <mysticalagriculture:crafting:21>, <mysticalagradditions:storage:0>],[<mysticalagradditions:insanium:0>, <mysticalagradditions:storage:0>, <mysticalagradditions:insanium:0>]]);
 
+//Gay sex
