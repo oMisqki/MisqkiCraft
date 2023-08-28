@@ -1,0 +1,6 @@
+{
+    "parent": "item/generated",
+    "textures": {
+      "layer0": "contenttweaker:items/general_darius_ii"
+    }
+  }
