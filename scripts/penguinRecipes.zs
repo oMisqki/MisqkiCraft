@@ -13,3 +13,7 @@ recipes.addShaped(<contenttweaker:penguini_block:0> * 1, [[<contenttweaker:pengu
 // Penguini Block to Star
 recipes.remove(<contenttweaker:penguini_star>);
 recipes.addShapeless("block2star", <contenttweaker:penguini_star> * 9, [<contenttweaker:penguini_block:0>]);
+
+// Sebaby Star
+recipes.remove(<contenttweaker:sebaby_star>);
+recipes.addShaped(<contenttweaker:sebaby_star> * 1, [[<minecraft:dye:5>, <draconicevolution:draconic_core>, <minecraft:glowstone_dust>], [<minecraft:dye:5>, <minecraft:diamond>, <minecraft:dye:5>],[<minecraft:glowstone_dust>, <minecraft:golden_apple:0>, <minecraft:dye:5>]]);

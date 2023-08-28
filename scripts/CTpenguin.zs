@@ -11,6 +11,9 @@ deepcrystal.register();
 var penguiniStar = VanillaFactory.createItem("penguini_star");
 penguiniStar.register();
 
+var sebabyStar = VanillaFactory.createItem("sebaby_star");
+sebabyStar.register();
+
 // BLOCKS
 var penguiniBlock = VanillaFactory.createBlock("penguini_block", <blockmaterial:rock>);
 penguiniBlock.setBlockHardness(50.0);
