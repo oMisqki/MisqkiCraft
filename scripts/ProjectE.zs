@@ -51,3 +51,7 @@ recipes.addShaped(<projecte:relay_mk2>,[[<solarflux:solar_panel_7>, <projecte:co
 recipes.remove(<projecte:relay_mk3>);
 
 recipes.addShaped(<projecte:relay_mk3>,[[<solarflux:solar_panel_8>, <projecte:condenser_mk2>, <solarflux:solar_panel_8>], [<solarflux:solar_panel_8>, <projecte:matter_block:1>, <solarflux:solar_panel_8>], [<solarflux:solar_panel_8>, <projecte:relay_mk2>, <solarflux:solar_panel_8>]]);
+
+// Atomic Disassembler
+recipes.remove(<mekanism:atomicdisassembler>);
+recipes.addShaped(<mekanism:atomicdisassembler> * 1, [[<projecte:item.pe_matter:1>, <mekanism:energycube:0>, <projecte:item.pe_matter:1>], [<projecte:item.pe_matter:1>, <mekanism:atomicalloy>, <projecte:item.pe_matter:1>],[null, <mekanism:ingot:0>, null]]);

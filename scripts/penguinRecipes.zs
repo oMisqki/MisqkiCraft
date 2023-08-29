@@ -17,3 +17,11 @@ recipes.addShapeless("block2star", <contenttweaker:penguini_star> * 9, [<content
 // Sebaby Star
 recipes.remove(<contenttweaker:sebaby_star>);
 recipes.addShaped(<contenttweaker:sebaby_star> * 1, [[<minecraft:dye:5>, <draconicevolution:draconic_core>, <minecraft:glowstone_dust>], [<minecraft:dye:5>, <minecraft:diamond>, <minecraft:dye:5>],[<minecraft:glowstone_dust>, <minecraft:golden_apple:0>, <minecraft:dye:5>]]);
+
+// Newborn Child
+recipes.remove(<contenttweaker:newborn_child>);
+recipes.addShapeless("birth", <contenttweaker:newborn_child> * 1, [<contenttweaker:penguini_star>,<contenttweaker:sebaby_star>]);
+
+// General Darius II
+recipes.remove(<contenttweaker:general_darius_ii>);
+recipes.addShapeless("Darius", <contenttweaker:general_darius_ii> * 1, [<contenttweaker:newborn_child>,<contenttweaker:newborn_child>]);
