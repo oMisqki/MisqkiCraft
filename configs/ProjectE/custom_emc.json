@@ -18,7 +18,7 @@
     },
     {
       "item": "draconicevolution:draconium_ingot|0",
-      "emc": 32768
+      "emc": 2048
     },
     {
       "item": "draconicevolution:dragon_heart|0",
@@ -26,7 +26,7 @@
     },
     {
       "item": "draconicevolution:draconic_block|0",
-      "emc": 664926
+      "emc": 521819
     }
   ]
 }
