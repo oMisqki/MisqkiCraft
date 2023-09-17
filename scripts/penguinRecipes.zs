@@ -25,3 +25,7 @@ recipes.addShapeless("birth", <contenttweaker:newborn_child> * 1, [<contenttweak
 // General Darius II
 recipes.remove(<contenttweaker:general_darius_ii>);
 recipes.addShapeless("Darius", <contenttweaker:general_darius_ii> * 1, [<contenttweaker:newborn_child>,<contenttweaker:newborn_child>]);
+
+// Villager Soul
+recipes.remove(<draconicevolution:mob_soul>);
+recipes.addShaped(<draconicevolution:mob_soul> * 1, [[<minecraft:emerald>, <minecraft:emerald_block>, <minecraft:emerald>], [<minecraft:emerald>, <contenttweaker:newborn_child>, <minecraft:emerald>],[<minecraft:emerald>, <minecraft:emerald_block>, <minecraft:emerald>]]);
