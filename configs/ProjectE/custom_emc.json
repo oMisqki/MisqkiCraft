@@ -1,0 +1,32 @@
+{
+  "entries": [
+    {
+      "item": "mekanism:biofuel|0",
+      "emc": 16
+    },
+    {
+      "item": "mekanism:substrate|0",
+      "emc": 128
+    },
+    {
+      "item": "mekanism:polyethene|0",
+      "emc": 256
+    },
+    {
+      "item": "mekanism:polyethene|2",
+      "emc": 768
+    },
+    {
+      "item": "draconicevolution:draconium_ingot|0",
+      "emc": 32768
+    },
+    {
+      "item": "draconicevolution:dragon_heart|0",
+      "emc": 256321
+    },
+    {
+      "item": "draconicevolution:draconic_block|0",
+      "emc": 664926
+    }
+  ]
+}
